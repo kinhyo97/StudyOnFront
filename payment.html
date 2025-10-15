@@ -15,13 +15,13 @@
             <header id="header">
                 <div class="header-container">
                   <div class="header-div">
-                    logo
+                    <img src="resources/logo.png" id="logo"alt="로고이미지">
                   </div>
                   <div class="header-div">
                     결제하기
                   </div>
                   <div class="header-div">
-                    info
+                    Login
                   </div>
                 </div>
             </header>
@@ -37,29 +37,33 @@
                       <div class="lecture-title">일 잘하는 사람은 '이렇게' 말합니다</div>
                       <div class="lecture-subtitle">인프런</div>
                     </div>
-                    <div class="lecture-price">\35,000</div>
+                    <div class="lecture-price">₩35,000</div>
                   </div>
                   <div class="divide-title-box">할인정보</div>
                   <div class="coupon-box">
-                    <button>쿠폰선택</button>
+                    <button class="coupon-button">쿠폰선택</button>
                     <div class="coupon-info">사용가능한 쿠폰이 없습니다.</div>
                   </div>
                   <div class="divide-title-box">결제수단</div>
                   <div class="payment-method-box">
                     <input type="radio" id="card" name="payment" value="card" checked>
                     <label>토스 페이먼츠</label>
+                    <img src="resources/Toss_Logo.png" class="payment-logo" alt="토스페이먼츠로고">
                   </div>
+                  <div class="divide-title-box">총 결제액</div>
                   <div class="payment-summary-box">
                     <div class="summary-item">
                       <div class="summary-title">총 결제금액</div>
-                      <div class="summary-price">\35,000</div>
+                      <div class="summary-price">₩35,000</div>
                     </div>
-                    <button class="pay-button">결제하기</button>
                   </div>
+                  <button class="pay-button">결제하기</button>
+                  <div id="empty-box"></div>
                 
             </div>
-            <footer id="footer">푸터영역</footer>
+            
         </div>
+        <footer id="footer">푸터영역</footer>
         
     </main>
   </div>
