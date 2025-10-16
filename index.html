@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oneday OneClass | 개발 메인 페이지</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Pretendard", sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      background-color: #1a1a1a;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #00ccff;
+    }
+
+    .page-links {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      width: 80%;
+      max-width: 1000px;
+    }
+
+    .page-card {
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(255,255,255,0.1);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .page-card:hover {
+      background: #222;
+      transform: translateY(-3px);
+    }
+
+    .page-card h3 {
+      margin-bottom: 10px;
+      color: #00ccff;
+    }
+
+    .page-card p {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .page-card a {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: #00ccff;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .page-card a:hover {
+      background-color: #00a6d6;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      color: #666;
+      font-size: 13px;
+      border-top: 1px solid #222;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Oneday OneClass | 개발 페이지 허브</h1>
+    <p style="color:#aaa; font-size:14px;">HTML/CSS 개발용 로컬 테스트 대시보드</p>
+  </header>
+
+  <div class="page-links">
+    <!-- 🔹 강의 관련 -->
+    <div class="page-card">
+      <h3>🎬 Lecture Player</h3>
+      <p>인강 재생 화면 (Video.js / 진도율 포함)</p>
+      <a href="LecturePlayer.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>🎬 메인페이지</h3>
+      <p>메인페이지</p>
+      <a href="Main.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>📚 Lecture Recommend</h3>
+      <p>강의 추천 / 카테고리별 추천 화면</p>
+      <a href="LectureRecommend.html">이동하기</a>
+    </div>
+
+    <!-- 🔹 강사 관리 -->
+    <div class="page-card">
+      <h3>👩‍🏫 Teacher List</h3>
+      <p>강사 목록 / 검색 / 정보 조회</p>
+      <a href="TeacherList.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>🧾 Teacher Management</h3>
+      <p>강사 등록 및 관리 페이지</p>
+      <a href="TeacherManagement.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>📋 Teacher Lecture Info</h3>
+      <p>강사가 등록한 강의 상세 보기</p>
+      <a href="TeacherManagementLecture.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>📧 Auth Mail</h3>
+      <p>이메일 인증 / 코드 확인 페이지</p>
+      <a href="AuthMail.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>🧍‍♂️ Resister</h3>
+      <p>회원가입 / 정보 입력 페이지</p>
+      <a href="Resister.html">이동하기</a>
+    </div>
+
+    <!-- 🔹 결제 / 관리 -->
+    <div class="page-card">
+      <h3>💳 Payment</h3>
+      <p>결제 / 영수증 / 결제 내역</p>
+      <a href="payment.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>⚙️ Main Template</h3>
+      <p>사이트 메인 템플릿 테스트용</p>
+      <a href="Maintemplate.html">이동하기</a>
+    </div>
+
+    <div class="page-card">
+      <h3>⚙️ Main Template</h3>
+      <p>강의등록</p>
+      <a href="TeacherManagementLectureResister.html">이동하기</a>
+    </div>
+
+  <div class="page-card">
+      <h3>강사 소개페이지</h3>
+      <p>강사</p>
+      <a href="TeacherProfile.html">이동하기</a>
+    </div>
+
+  <div class="page-card">
+      <h3>관리자 페이지</h3>
+      <p>관리자 페이지</p>
+      <a href="AdminSupport.html">이동하기</a>
+  </div>
+
+  <div class="page-card">
+      <h3>고객 상담페이지</h3>
+      <p>고객 상담페이지</p>
+      <a href="UserSupport.html">이동하기</a>
+  </div>
+
+  <div>
+    만들어야될거
+  </div>
+  <div>
+    - 선생님 소개페이지
+  </div>
+
+  <footer>
+    ⓒ 2025 Oneday OneClass | Dev Hub | 모든 HTML 파일 간 빠른 이동 지원
+  </footer>
+</body>
+</html>

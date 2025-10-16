@@ -11,8 +11,19 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: blueviolet;
+  background-color: rgb(255, 255, 255);
   margin:10px;
+  border:1px solid rgb(228, 216, 216);
+  border-radius:10px;
+  font-size:20px;
+  font-weight:bold;
+  color: rgba(0, 0, 0, 0.6); /* 검정색, 불투명도 50% */
+}
+
+.nav-item:hover{
+  background-color: rgb(163, 206, 170);
+  transition: all 0.3s ease;
+  cursor:pointer;
 }
 
 
@@ -22,7 +33,7 @@
   gap: 20px;
   width: 100%;             /* ✅ 1420px 고정 대신 부모에 맞춤 */
   box-sizing: border-box;  /* ✅ padding/gap 계산 포함 */
-  background-color: pink;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -47,4 +58,11 @@
 .lecture-section-title{
   font-size: 24px;
   font-weight: bold;
+}
+
+.teacher-list-title{
+  font-size:30px;
+  font-weight:bold;
+  text-align: left;
+  font-family: 'Noto Sans KR', sans-serif;
 }
